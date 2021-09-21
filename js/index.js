@@ -144,7 +144,7 @@ function removeElement(elem){
                 console.log(array);
             }
         }
-        todoId=array[array.length - 1].idarray;
+        todoId=array[array.length - 1].idarray+1;
     }
     elem.remove();
     updateItemsLeft()
