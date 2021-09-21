@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="themeDark" id="body">
+  <main>
+    <div class="wrapBgImg">
+      <img class="imgDesktop imgDesktopDark" src="images/bg-desktop-dark.jpg" alt="background dark">
+      <img class="imgDesktop imgDesktopLight" src="images/bg-desktop-light.jpg" alt="background light">
+      <img class="imgMobile imgMobileDark" src="images/bg-mobile-dark.jpg" alt="background dark">
+      <img class="imgMobile imgMobileLight" src="images/bg-mobile-light.jpg" alt="background light">
+    </div>
+    <div class="wrap">
+      <div class="title-themes">
+        <h1>TODO</h1>
+        <button onclick="theme()">
+          <img class="iconSun" src="images/icon-sun.svg" alt>
+          <img class="iconMoon" src="images/icon-moon.svg" alt>
+        </button>
+      </div>
+
+      <div class="wrapCreate">
+        <div class="circle">
+          <button ></button>
+        </div>
+        <div class="create">
+          <input type="text" placeholder="Create a new todo..." id="inputCreate">
+        </div>
+      </div>
+      <div class="wrapItFil">
+        <div class="wrapItems" id="wrapItems">
+          
+        </div>
+        <div class="wrapFilters">
+          <span id="itemsLeft">0 items left</span>
+          <div class="filter">
+            <button class="filterActive" id="filAll" onclick="activeFilter('All')">All</button>
+            <button id="filActive" onclick="activeFilter('Active')">Active</button>
+            <button id="filCompleted" onclick="activeFilter('Completed')">Completed</button>
+          </div>
+          <button onclick="clearCompleted()">Clear Completed</button>
+        </div>
+      </div>
+      <p class="textFooter">Drag and drop to reorder list</p>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/omarmitma" target="_blank">Omar Mitma</a>.
+      </div>
+
+    </div>
+    
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
